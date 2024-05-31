@@ -29,5 +29,9 @@ Namespace Controllers
         Public Sub DeleteValue(ByVal id As Integer)
 
         End Sub
+
+        Protected Overrides Sub Finalize()
+            MyBase.Finalize()
+        End Sub
     End Class
 End Namespace
